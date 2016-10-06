@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ipM-71-GEO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--购物车-->
+        <scene sceneID="ZpH-QI-DWh">
+            <objects>
+                <navigationController id="ipM-71-GEO" customClass="BaseNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="购物车" id="Gxp-s4-D2L"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="evF-x4-edS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YBz-MU-vv4" kind="relationship" relationship="rootViewController" id="rbw-z3-j8U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5L-EK-kiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-508" y="394"/>
+        </scene>
+        <!--购物车-->
+        <scene sceneID="Fwg-rP-IzG">
+            <objects>
+                <viewController id="YBz-MU-vv4" customClass="ShoppingCartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LGT-VI-u1l"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dll-Cz-kkd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5q6-zy-BA6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="购物车" id="Dq2-Sa-wmF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0YZ-p9-fbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="171" y="394"/>
+        </scene>
+    </scenes>
+</document>

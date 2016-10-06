@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nds-d1-Olv">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--搜索-->
+        <scene sceneID="IBP-6G-Zbz">
+            <objects>
+                <navigationController id="Nds-d1-Olv" customClass="BaseNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="搜索" id="oPT-pg-Cvc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VYJ-ur-ZeX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cBy-LX-xgE" kind="relationship" relationship="rootViewController" id="3fE-Mj-Zsm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9q-nt-XLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-505" y="414"/>
+        </scene>
+        <!--搜索-->
+        <scene sceneID="OiU-R0-hCn">
+            <objects>
+                <viewController id="cBy-LX-xgE" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eq4-hi-t7n"/>
+                        <viewControllerLayoutGuide type="bottom" id="aUp-Li-PiH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L84-pb-ugY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="搜索" id="j23-ti-d59"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ym-0z-FiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="206" y="414"/>
+        </scene>
+    </scenes>
+</document>
