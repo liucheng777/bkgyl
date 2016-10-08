@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD8291F61DA8CBBB001D76FE /* CartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8291F41DA8CBBB001D76FE /* CartTableViewCell.m */; };
+		CD8291F71DA8CBBB001D76FE /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8291F51DA8CBBB001D76FE /* CartTableViewCell.xib */; };
 		CDED84C71DA7304000108D88 /* launchView.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDED84C61DA7304000108D88 /* launchView.jpg */; };
 		CDED84CA1DA7326C00108D88 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED84C91DA7326C00108D88 /* LoginViewController.m */; };
 		CDED84E01DA7400B00108D88 /* NSMutableAttributedString+TY.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED84CD1DA7400B00108D88 /* NSMutableAttributedString+TY.m */; };
@@ -145,6 +147,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD8291F31DA8CBBB001D76FE /* CartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartTableViewCell.h; sourceTree = "<group>"; };
+		CD8291F41DA8CBBB001D76FE /* CartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartTableViewCell.m; sourceTree = "<group>"; };
+		CD8291F51DA8CBBB001D76FE /* CartTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
 		CDED84C61DA7304000108D88 /* launchView.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launchView.jpg; sourceTree = "<group>"; };
 		CDED84C81DA7326C00108D88 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CDED84C91DA7326C00108D88 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -577,6 +582,9 @@
 			isa = PBXGroup;
 			children = (
 				CDF677A11DA6271600153261 /* ShoppingCart.storyboard */,
+				CD8291F31DA8CBBB001D76FE /* CartTableViewCell.h */,
+				CD8291F41DA8CBBB001D76FE /* CartTableViewCell.m */,
+				CD8291F51DA8CBBB001D76FE /* CartTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1041,6 +1049,7 @@
 				CDEE866F1DA87FDF002D01BE /* field_1@2x.png in Resources */,
 				CDED85191DA792DE00108D88 /* see_sel@2x.png in Resources */,
 				CDEE868B1DA88D76002D01BE /* mineImage_2@2x.png in Resources */,
+				CD8291F71DA8CBBB001D76FE /* CartTableViewCell.xib in Resources */,
 				CDED85071DA7795600108D88 /* image_2@2x.png in Resources */,
 				CDED85171DA792DE00108D88 /* xuanze_sel@2x.png in Resources */,
 				CDED850C1DA77CB100108D88 /* fImage_1@2x.png in Resources */,
@@ -1076,6 +1085,7 @@
 				CDF6775F1DA61F0900153261 /* BaseNavigationController.m in Sources */,
 				CDF677781DA61F0900153261 /* MJRefreshHeader.m in Sources */,
 				CDF677701DA61F0900153261 /* AFURLSessionManager.m in Sources */,
+				CD8291F61DA8CBBB001D76FE /* CartTableViewCell.m in Sources */,
 				CDF6777F1DA61F0900153261 /* SVProgressHUD.m in Sources */,
 				CDF677811DA61F0900153261 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				CDED84E71DA7400B00108D88 /* TYTextContainer.m in Sources */,

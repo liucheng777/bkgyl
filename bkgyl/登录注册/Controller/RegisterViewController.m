@@ -117,7 +117,6 @@
         button.frame = CGRectMake(kScreenWidth - 80, 15, 18, 14);
         [button setImage:[UIImage imageNamed:@"see_sel"] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(seeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-        
     }
     
     else if (indexPath.row == 4)
