@@ -20,11 +20,11 @@
     //设置导航栏背景颜色
     self.navigationBar.barTintColor = navColor;
     //用系统默认的设置字体颜色和大小
-    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:HGColor(164, 134, 96),NSFontAttributeName:[UIFont systemFontOfSize:20]};
+    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:HGColor(164, 134, 96),NSFontAttributeName:[UIFont systemFontOfSize:16]};
 }
 //设置状态栏的颜色
 -(UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
+    return UIStatusBarStyleDefault;
 }
 
 -(void)bakeAction

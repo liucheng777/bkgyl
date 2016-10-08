@@ -7,6 +7,7 @@
 //
 
 #import "MineViewController.h"
+#import "MineTableView.h"
 
 @interface MineViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    MineTableView *mineTableView = [[MineTableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
+    [self.view addSubview:mineTableView];
 }
 
 - (void)didReceiveMemoryWarning {

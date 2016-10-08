@@ -9,7 +9,7 @@
         <scene sceneID="yET-OS-0Zc">
             <objects>
                 <navigationController id="yyi-ch-NGA" customClass="BaseNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" id="bEZ-hs-hu9"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="icon_1.png" id="bEZ-hs-hu9"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d2t-ui-sqX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -43,4 +43,7 @@
             <point key="canvasLocation" x="528" y="439"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_1.png" width="25" height="25"/>
+    </resources>
 </document>

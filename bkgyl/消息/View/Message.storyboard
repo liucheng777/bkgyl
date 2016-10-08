@@ -9,7 +9,7 @@
         <scene sceneID="YP5-49-rcJ">
             <objects>
                 <navigationController id="NmV-N5-MGj" customClass="BaseNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="消息" id="1CD-ZP-gBp"/>
+                    <tabBarItem key="tabBarItem" title="消息" image="icon_5.png" id="1CD-ZP-gBp"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d29-c4-6IY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -43,4 +43,7 @@
             <point key="canvasLocation" x="-96" y="441"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_5.png" width="24" height="22"/>
+    </resources>
 </document>

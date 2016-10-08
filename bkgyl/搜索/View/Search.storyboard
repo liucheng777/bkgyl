@@ -9,7 +9,7 @@
         <scene sceneID="IBP-6G-Zbz">
             <objects>
                 <navigationController id="Nds-d1-Olv" customClass="BaseNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="搜索" id="oPT-pg-Cvc"/>
+                    <tabBarItem key="tabBarItem" title="搜索" image="icon_2.png" id="oPT-pg-Cvc"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VYJ-ur-ZeX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -43,4 +43,7 @@
             <point key="canvasLocation" x="206" y="414"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_2.png" width="25" height="25"/>
+    </resources>
 </document>

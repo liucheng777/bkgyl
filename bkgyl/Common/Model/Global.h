@@ -19,6 +19,9 @@
 #define HGColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define HGolorAlpha(r,g,b,alp) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(alp)]
 
+
+#define brown_label_color [UIColor colorWithRed:131/255.0 green:95/255.0 blue:51/255.0 alpha:1]
+#define brown_button_color [UIColor colorWithRed:228/255.0 green:199/255.0 blue:141/255.0 alpha:1]
 //微信
 #define kWXAPP_ID @"wx3b1a795bf74dfbaa"
 #define kWXAPP_SECRET @"430a1892eb0e1d35fa6eb6f804920948"

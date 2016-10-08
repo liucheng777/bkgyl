@@ -7,6 +7,7 @@
 //
 
 #import "SearchViewController.h"
+#import "LoginViewController.h"
 
 @interface SearchViewController ()
 
@@ -16,7 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"登录" forState:UIControlStateNormal];
+    [button setTitleColor:brown_label_color forState:UIControlStateNormal];
+    button.frame = CGRectMake(50, kScreenHeight / 2.0 - 17, kScreenWidth - 100, 34);
+    [button addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+-(void)buttonAction
+{
+    LoginViewController *vc = [[LoginViewController alloc]init];
+    self.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+    self.hidesBottomBarWhenPushed = NO;
 }
 
 - (void)didReceiveMemoryWarning {

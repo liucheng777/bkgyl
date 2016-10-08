@@ -9,7 +9,7 @@
         <scene sceneID="ZpH-QI-DWh">
             <objects>
                 <navigationController id="ipM-71-GEO" customClass="BaseNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="购物车" id="Gxp-s4-D2L"/>
+                    <tabBarItem key="tabBarItem" title="购物车" image="icon_3.png" id="Gxp-s4-D2L"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="evF-x4-edS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -43,4 +43,7 @@
             <point key="canvasLocation" x="171" y="394"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_3.png" width="24" height="25"/>
+    </resources>
 </document>

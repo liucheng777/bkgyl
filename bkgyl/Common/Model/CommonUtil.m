@@ -111,28 +111,28 @@
  * @param fontArray 字体数组
  * @return TYAttributedLabel
  */
-//+(TYAttributedLabel *)getLabel:(TYAttributedLabel *)label1 str:(NSString *)text color:(NSArray *)colorArray  font:(NSArray *)fontArray{
-//    [label1 setText:@""];
-//    NSArray *textArray = [text componentsSeparatedByString:@"<c>"];
-////    NSLog(@"textArray:%@",textArray);
-//    NSInteger index = 0;
-//    for (NSString *text in textArray) {
-//        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:text];
-//        // 设置当前文本字体
-//        [attributedString addAttributeTextColor:colorArray[index%[colorArray count]]];
-//        
-//        if ([fontArray count] > 0) {
-//            NSInteger fontSize = [fontArray[index % [fontArray count]] integerValue];
-//            // 设置当前文本字体大小
-//            [attributedString addAttributeFont:[UIFont systemFontOfSize:fontSize]];
-//        }
-////        NSLog(@"attributedString:%@",attributedString);
-//        // 追加(添加到最后)属性文本
-//        [label1 appendTextAttributedString:attributedString];
-//        index++;
-//    }
-//    return label1;
-//}
++(TYAttributedLabel *)getLabel:(TYAttributedLabel *)label1 str:(NSString *)text color:(NSArray *)colorArray  font:(NSArray *)fontArray{
+    [label1 setText:@""];
+    NSArray *textArray = [text componentsSeparatedByString:@"<c>"];
+//    NSLog(@"textArray:%@",textArray);
+    NSInteger index = 0;
+    for (NSString *text in textArray) {
+        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:text];
+        // 设置当前文本字体
+        [attributedString addAttributeTextColor:colorArray[index%[colorArray count]]];
+        
+        if ([fontArray count] > 0) {
+            NSInteger fontSize = [fontArray[index % [fontArray count]] integerValue];
+            // 设置当前文本字体大小
+            [attributedString addAttributeFont:[UIFont systemFontOfSize:fontSize]];
+        }
+//        NSLog(@"attributedString:%@",attributedString);
+        // 追加(添加到最后)属性文本
+        [label1 appendTextAttributedString:attributedString];
+        index++;
+    }
+    return label1;
+}
 
 
 @end
