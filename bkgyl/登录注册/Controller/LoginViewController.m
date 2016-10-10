@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "TYAttributedLabel.h"
 #import "RegisterViewController.h"
+#import "ForgetPasswordViewController.h"
 
 @interface LoginViewController ()<UITextFieldDelegate>
 {
@@ -142,6 +143,9 @@
 -(void)forgetButtonAction
 {
     NSLog(@"忘记密码");
+    ForgetPasswordViewController *vc = [[ForgetPasswordViewController alloc] init];
+    self.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)_createThirdLoginView

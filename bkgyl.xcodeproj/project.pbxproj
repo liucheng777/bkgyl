@@ -15,6 +15,9 @@
 		CD8292041DA8E0A9001D76FE /* SpaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8292021DA8E0A9001D76FE /* SpaceTableViewCell.xib */; };
 		CDEB45F51DAB1CC0004B6261 /* GoodsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEB45F31DAB1CC0004B6261 /* GoodsTableViewCell.m */; };
 		CDEB45F61DAB1CC0004B6261 /* GoodsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEB45F41DAB1CC0004B6261 /* GoodsTableViewCell.xib */; };
+		CDEB45F91DAB2379004B6261 /* ForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEB45F81DAB2379004B6261 /* ForgetPasswordViewController.m */; };
+		CDEB45FC1DAB2A73004B6261 /* ForgetPasswordViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEB45FB1DAB2A73004B6261 /* ForgetPasswordViewController1.m */; };
+		CDEB45FF1DAB31DF004B6261 /* ForgetPasswordViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEB45FE1DAB31DF004B6261 /* ForgetPasswordViewController2.m */; };
 		CDED84C71DA7304000108D88 /* launchView.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDED84C61DA7304000108D88 /* launchView.jpg */; };
 		CDED84CA1DA7326C00108D88 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED84C91DA7326C00108D88 /* LoginViewController.m */; };
 		CDED84E01DA7400B00108D88 /* NSMutableAttributedString+TY.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED84CD1DA7400B00108D88 /* NSMutableAttributedString+TY.m */; };
@@ -165,6 +168,12 @@
 		CDEB45F21DAB1CC0004B6261 /* GoodsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsTableViewCell.h; sourceTree = "<group>"; };
 		CDEB45F31DAB1CC0004B6261 /* GoodsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsTableViewCell.m; sourceTree = "<group>"; };
 		CDEB45F41DAB1CC0004B6261 /* GoodsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodsTableViewCell.xib; sourceTree = "<group>"; };
+		CDEB45F71DAB2379004B6261 /* ForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController.h; sourceTree = "<group>"; };
+		CDEB45F81DAB2379004B6261 /* ForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewController.m; sourceTree = "<group>"; };
+		CDEB45FA1DAB2A73004B6261 /* ForgetPasswordViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController1.h; sourceTree = "<group>"; };
+		CDEB45FB1DAB2A73004B6261 /* ForgetPasswordViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewController1.m; sourceTree = "<group>"; };
+		CDEB45FD1DAB31DF004B6261 /* ForgetPasswordViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController2.h; sourceTree = "<group>"; };
+		CDEB45FE1DAB31DF004B6261 /* ForgetPasswordViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewController2.m; sourceTree = "<group>"; };
 		CDED84C61DA7304000108D88 /* launchView.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launchView.jpg; sourceTree = "<group>"; };
 		CDED84C81DA7326C00108D88 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CDED84C91DA7326C00108D88 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -399,6 +408,12 @@
 				CDED84C91DA7326C00108D88 /* LoginViewController.m */,
 				CDED851A1DA7934000108D88 /* RegisterViewController.h */,
 				CDED851B1DA7934000108D88 /* RegisterViewController.m */,
+				CDEB45F71DAB2379004B6261 /* ForgetPasswordViewController.h */,
+				CDEB45F81DAB2379004B6261 /* ForgetPasswordViewController.m */,
+				CDEB45FA1DAB2A73004B6261 /* ForgetPasswordViewController1.h */,
+				CDEB45FB1DAB2A73004B6261 /* ForgetPasswordViewController1.m */,
+				CDEB45FD1DAB31DF004B6261 /* ForgetPasswordViewController2.h */,
+				CDEB45FE1DAB31DF004B6261 /* ForgetPasswordViewController2.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1125,6 +1140,7 @@
 				CDF677601DA61F0900153261 /* BaseViewController.m in Sources */,
 				CDF677741DA61F0900153261 /* MJRefreshConst.m in Sources */,
 				CDF677731DA61F0900153261 /* MJRefreshComponent.m in Sources */,
+				CDEB45F91DAB2379004B6261 /* ForgetPasswordViewController.m in Sources */,
 				CDF6776B1DA61F0900153261 /* AFNetworkReachabilityManager.m in Sources */,
 				CDF6777C1DA61F0900153261 /* UIScrollView+MJRefresh.m in Sources */,
 				CDF677621DA61F0900153261 /* CommonUtil.m in Sources */,
@@ -1165,8 +1181,10 @@
 				CDED851C1DA7934000108D88 /* RegisterViewController.m in Sources */,
 				CDF677761DA61F0900153261 /* MJRefreshGifFooter.m in Sources */,
 				CDF6777B1DA61F0900153261 /* UIScrollView+MJExtension.m in Sources */,
+				CDEB45FF1DAB31DF004B6261 /* ForgetPasswordViewController2.m in Sources */,
 				CDF677871DA61F0900153261 /* UIWebView+AFNetworking.m in Sources */,
 				CDF6777D1DA61F0900153261 /* UIView+MJExtension.m in Sources */,
+				CDEB45FC1DAB2A73004B6261 /* ForgetPasswordViewController1.m in Sources */,
 				CDF677751DA61F0900153261 /* MJRefreshFooter.m in Sources */,
 				CDF677861DA61F0900153261 /* UIRefreshControl+AFNetworking.m in Sources */,
 				CDEE86681DA87ED5002D01BE /* FieldViewController.m in Sources */,
