@@ -13,6 +13,8 @@
 		CD8291FF1DA8D79A001D76FE /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8291FD1DA8D79A001D76FE /* MessageTableViewCell.xib */; };
 		CD8292031DA8E0A9001D76FE /* SpaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8292011DA8E0A9001D76FE /* SpaceTableViewCell.m */; };
 		CD8292041DA8E0A9001D76FE /* SpaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8292021DA8E0A9001D76FE /* SpaceTableViewCell.xib */; };
+		CDEB45F51DAB1CC0004B6261 /* GoodsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEB45F31DAB1CC0004B6261 /* GoodsTableViewCell.m */; };
+		CDEB45F61DAB1CC0004B6261 /* GoodsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEB45F41DAB1CC0004B6261 /* GoodsTableViewCell.xib */; };
 		CDED84C71DA7304000108D88 /* launchView.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDED84C61DA7304000108D88 /* launchView.jpg */; };
 		CDED84CA1DA7326C00108D88 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED84C91DA7326C00108D88 /* LoginViewController.m */; };
 		CDED84E01DA7400B00108D88 /* NSMutableAttributedString+TY.m in Sources */ = {isa = PBXBuildFile; fileRef = CDED84CD1DA7400B00108D88 /* NSMutableAttributedString+TY.m */; };
@@ -160,6 +162,9 @@
 		CD8292001DA8E0A9001D76FE /* SpaceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceTableViewCell.h; sourceTree = "<group>"; };
 		CD8292011DA8E0A9001D76FE /* SpaceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceTableViewCell.m; sourceTree = "<group>"; };
 		CD8292021DA8E0A9001D76FE /* SpaceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpaceTableViewCell.xib; sourceTree = "<group>"; };
+		CDEB45F21DAB1CC0004B6261 /* GoodsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsTableViewCell.h; sourceTree = "<group>"; };
+		CDEB45F31DAB1CC0004B6261 /* GoodsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsTableViewCell.m; sourceTree = "<group>"; };
+		CDEB45F41DAB1CC0004B6261 /* GoodsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodsTableViewCell.xib; sourceTree = "<group>"; };
 		CDED84C61DA7304000108D88 /* launchView.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launchView.jpg; sourceTree = "<group>"; };
 		CDED84C81DA7326C00108D88 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CDED84C91DA7326C00108D88 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -634,6 +639,9 @@
 				CD8292001DA8E0A9001D76FE /* SpaceTableViewCell.h */,
 				CD8292011DA8E0A9001D76FE /* SpaceTableViewCell.m */,
 				CD8292021DA8E0A9001D76FE /* SpaceTableViewCell.xib */,
+				CDEB45F21DAB1CC0004B6261 /* GoodsTableViewCell.h */,
+				CDEB45F31DAB1CC0004B6261 /* GoodsTableViewCell.m */,
+				CDEB45F41DAB1CC0004B6261 /* GoodsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1043,6 +1051,7 @@
 				CDED84FC1DA7735C00108D88 /* icon_4@2x.png in Resources */,
 				CDEE86941DA88D76002D01BE /* mineImage_11@2x.png in Resources */,
 				CDEE86741DA87FDF002D01BE /* field_6@2x.png in Resources */,
+				CDEB45F61DAB1CC0004B6261 /* GoodsTableViewCell.xib in Resources */,
 				CDED850F1DA77CB100108D88 /* fImage_4@2x.png in Resources */,
 				CDF677721DA61F0900153261 /* MJRefresh.bundle in Resources */,
 				CDF6779B1DA625B600153261 /* Message.storyboard in Resources */,
@@ -1127,6 +1136,7 @@
 				CDF6779E1DA626A000153261 /* ShoppingCartViewController.m in Sources */,
 				CDEE86791DA88CFA002D01BE /* MineViewController.m in Sources */,
 				CD8292031DA8E0A9001D76FE /* SpaceTableViewCell.m in Sources */,
+				CDEB45F51DAB1CC0004B6261 /* GoodsTableViewCell.m in Sources */,
 				CDED84E41DA7400B00108D88 /* TYImageStorage.m in Sources */,
 				CDED84E91DA7400B00108D88 /* TYViewStorage.m in Sources */,
 				CDF6777A1DA61F0900153261 /* MJRefreshLegendHeader.m in Sources */,

@@ -98,6 +98,7 @@
                     <constraint firstItem="ckC-tD-bMJ" firstAttribute="leading" secondItem="iWv-vs-9ZE" secondAttribute="trailing" constant="15" id="w6y-xc-nie"/>
                 </constraints>
             </tableViewCellContentView>
+            <point key="canvasLocation" x="178" y="-242"/>
         </tableViewCell>
     </objects>
 </document>
