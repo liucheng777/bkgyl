@@ -125,8 +125,8 @@
 //点击屏幕空白处去掉键盘
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self.view endEditing:YES];
-//    [_passwordField resignFirstResponder];
+    [_accountField resignFirstResponder];
+    [_passwordField resignFirstResponder];
 }
 
 -(void)registerAction

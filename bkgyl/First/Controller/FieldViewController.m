@@ -301,7 +301,7 @@
     NSLog(@"%li",num);
 //        TinyIndexSubViewController *vc = [[TinyIndexSubViewController alloc] init];
 //        NSArray *arr = @[@"助残",@"助善",@"助老",@"助学",@"扶贫",@"救急",@"其他"];
-//        vc.title = arr[num];
+//        vc.title = _buttonNames[i];
 //        vc.type = [NSNumber numberWithInteger:(num + 1)];
 //        self.hidesBottomBarWhenPushed = YES;
 //        [self.navigationController pushViewController:vc animated:YES];
@@ -365,7 +365,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
