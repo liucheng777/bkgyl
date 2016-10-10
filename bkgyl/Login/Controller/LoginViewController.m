@@ -121,11 +121,12 @@
     [textField resignFirstResponder];
     return YES;
 }
+
 //点击屏幕空白处去掉键盘
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [_accountField resignFirstResponder];
-    [_passwordField resignFirstResponder];
+    [self.view endEditing:YES];
+//    [_passwordField resignFirstResponder];
 }
 
 -(void)registerAction

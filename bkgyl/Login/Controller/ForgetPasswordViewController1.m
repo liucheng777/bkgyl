@@ -1,29 +1,30 @@
 //
-//  ForgetPasswordViewController2.m
+//  ForgetPasswordViewController1.m
 //  bkgyl
 //
 //  Created by 黄诸龙 on 16/10/10.
 //  Copyright © 2016年 刘施施. All rights reserved.
 //
 
+#import "ForgetPasswordViewController1.h"
 #import "ForgetPasswordViewController2.h"
 
-
-@interface ForgetPasswordViewController2 ()<UITextFieldDelegate>
+@interface ForgetPasswordViewController1 ()<UITextFieldDelegate>
 {
-    UITextField *_password;
-    UITextField *_password1;
+    UITextField *_telField;
+    UITextField *_codeField;
 }
 
 @end
 
-@implementation ForgetPasswordViewController2
+@implementation ForgetPasswordViewController1
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNavItem];
     self.title = @"找回密码";
     [self _createView];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -40,29 +41,29 @@
 -(void)_createView
 {
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake( 10, 64 + 10, 24, 24)];
-    imageView.image = [UIImage imageNamed:@"password"];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake( 10, 64 + 12, 15, 20)];
+    imageView.image = [UIImage imageNamed:@"reg_tel"];
     [self.view addSubview:imageView];
     
-    _password = [[UITextField alloc] initWithFrame:CGRectMake(imageView.right + 14 , 64, kScreenWidth - 55, 44)];
-    _password.delegate = self;
-    _password.textColor = brown_label_color;
-    _password.font = HGfont(14);
-    _password.placeholder = @"请输入6-16位密码";
-    [self.view addSubview:_password];
+    _telField = [[UITextField alloc] initWithFrame:CGRectMake(imageView.right + 14 , 64, kScreenWidth - 55, 44)];
+    _telField.delegate = self;
+    _telField.textColor = brown_label_color;
+    _telField.font = HGfont(14);
+    _telField.placeholder = @"请输入11位手机号";
+    [self.view addSubview:_telField];
     
-    UIView *lineView1 = [[UIView alloc] initWithFrame:CGRectMake(0, _password.bottom, kScreenWidth, 1)];
+    UIView *lineView1 = [[UIView alloc] initWithFrame:CGRectMake(0, _telField.bottom, kScreenWidth, 1)];
     lineView1.backgroundColor = HGColor(235, 235, 235);
     [self.view addSubview:lineView1];
     
-    _password1 = [[UITextField alloc] initWithFrame:CGRectMake(imageView.right + 14 , lineView1.bottom, kScreenWidth - 55, 44)];
-    _password1.delegate = self;
-    _password1.textColor = brown_label_color;
-    _password1.font = HGfont(14);
-    _password1.placeholder = @"请再次确认6-16位密码";
-    [self.view addSubview:_password1];
+    _codeField = [[UITextField alloc] initWithFrame:CGRectMake(imageView.right + 14 , lineView1.bottom, kScreenWidth - 55, 44)];
+    _codeField.delegate = self;
+    _codeField.textColor = brown_label_color;
+    _codeField.font = HGfont(14);
+    _codeField.placeholder = @"请输入手机验证码";
+    [self.view addSubview:_codeField];
     
-    UIView *lineView2 = [[UIView alloc] initWithFrame:CGRectMake(0, _password1.bottom, kScreenWidth, 1)];
+    UIView *lineView2 = [[UIView alloc] initWithFrame:CGRectMake(0, _codeField.bottom, kScreenWidth, 1)];
     lineView2.backgroundColor = HGColor(235, 235, 235);
     [self.view addSubview:lineView2];
     
@@ -80,6 +81,9 @@
 -(void)nextAction
 {
     NSLog(@"下一步");
+    ForgetPasswordViewController2 *vc =  [[ForgetPasswordViewController2 alloc]init];
+    self.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 //点击return 按钮 去掉
@@ -91,8 +95,8 @@
 //点击屏幕空白处去掉键盘
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [_password1 resignFirstResponder];
-    [_password resignFirstResponder];
+    [_telField resignFirstResponder];
+    [_codeField resignFirstResponder];
 }
 
 @end
