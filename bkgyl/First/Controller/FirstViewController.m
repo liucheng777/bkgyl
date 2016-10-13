@@ -195,32 +195,22 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    if (section == 0) {
-        return 0.01;
-    }
+    if (section == 0) return 0.01;
     return 5;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == 0) {
-        return 148.0 / 320.0 * kScreenWidth;
-    }
-    else if (indexPath.section == 1)
-    {
-        return 90.0 / 310.0 * (kScreenWidth - 10) + 10;
-    }
-    else if (indexPath.section == 1)
-    {
-        return 132.0 / 320 * kScreenWidth;
-    }
-    
+    if (indexPath.section == 0) return 148.0 / 320.0 * kScreenWidth;
+    if (indexPath.section == 1) return 90.0 / 310.0 * (kScreenWidth - 10) + 10;
+    if (indexPath.section == 1) return 132.0 / 320 * kScreenWidth;
     return 44;
 }
 -(void)buttonAction:(UIButton *)btn
 {
     NSLog(@"%li",btn.tag - 100);
-    if (btn.tag == 102) {
+    if (btn.tag == 102)
+    {
         FieldViewController *vc = [[FieldViewController alloc] init];
         self.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];

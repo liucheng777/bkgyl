@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNavItem];
-    self.title = @"找回密码";
+    self.navigationItem.title = @"找回密码";
     [self _createView];
     self.view.backgroundColor = [UIColor whiteColor];
 }

@@ -28,13 +28,9 @@
 
 //每组的行数
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (section < 2) {
-        return 2;
-    }else if (section == 2) {
-        return 3;
-    }else{
-        return 1;
-    }
+    if (section < 2) return 2;
+    if (section == 2) return 3;
+    return 1;
 }
 
 //设置每组的单元格
@@ -163,27 +159,20 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
-        if (indexPath.row == 0) {
-            return 154;
-        }else{
-            return 64;
-        }
-    }else if (indexPath.section == 1){
-        if (indexPath.row == 1) {
-            return 64;
-        }
+        if (indexPath.row == 0) return 154;
+        return 64;
     }
+    if (indexPath.section == 1) return 64;
     return 50;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    if (section == 0) {
-        return 0.1;
-    }else{
-        return 16;
-    }
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) return 0.1;
+    return 16;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
     return 1;
 }
 

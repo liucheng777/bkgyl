@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25DFB5D768066557DCD36199 /* libPods-bkgyl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8915283DC3DECA0CF66C6D29 /* libPods-bkgyl.a */; };
 		CDEB46411DAB87AE004B6261 /* FieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEB46031DAB87AE004B6261 /* FieldViewController.m */; };
 		CDEB46421DAB87AE004B6261 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEB46051DAB87AE004B6261 /* FirstViewController.m */; };
 		CDEB46431DAB87AE004B6261 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEB46081DAB87AE004B6261 /* First.storyboard */; };
@@ -156,6 +157,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6671BF4FAC0394D7D2395663 /* Pods-bkgyl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bkgyl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bkgyl/Pods-bkgyl.debug.xcconfig"; sourceTree = "<group>"; };
+		8915283DC3DECA0CF66C6D29 /* libPods-bkgyl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bkgyl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC590980F2CC77EF8D28751 /* Pods-bkgyl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bkgyl.release.xcconfig"; path = "Pods/Target Support Files/Pods-bkgyl/Pods-bkgyl.release.xcconfig"; sourceTree = "<group>"; };
 		CDEB46021DAB87AE004B6261 /* FieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldViewController.h; sourceTree = "<group>"; };
 		CDEB46031DAB87AE004B6261 /* FieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldViewController.m; sourceTree = "<group>"; };
 		CDEB46041DAB87AE004B6261 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
@@ -371,6 +375,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25DFB5D768066557DCD36199 /* libPods-bkgyl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +396,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		624A17936A228FEF8DB38B9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8915283DC3DECA0CF66C6D29 /* libPods-bkgyl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CDEB46001DAB87AE004B6261 /* First */ = {
 			isa = PBXGroup;
 			children = (
@@ -704,6 +717,8 @@
 				CDF676D11DA61ED600153261 /* bkgylTests */,
 				CDF676DC1DA61ED600153261 /* bkgylUITests */,
 				CDF676B61DA61ED600153261 /* Products */,
+				D1E58576EBEE4F7E28778902 /* Pods */,
+				624A17936A228FEF8DB38B9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -933,6 +948,15 @@
 			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
+		D1E58576EBEE4F7E28778902 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6671BF4FAC0394D7D2395663 /* Pods-bkgyl.debug.xcconfig */,
+				BAC590980F2CC77EF8D28751 /* Pods-bkgyl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -940,9 +964,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDF676E21DA61ED600153261 /* Build configuration list for PBXNativeTarget "bkgyl" */;
 			buildPhases = (
+				6B2121D1F98354391A82CECB /* [CP] Check Pods Manifest.lock */,
 				CDF676B11DA61ED600153261 /* Sources */,
 				CDF676B21DA61ED600153261 /* Frameworks */,
 				CDF676B31DA61ED600153261 /* Resources */,
+				123B2E486D8659A161FD8CF8 /* [CP] Embed Pods Frameworks */,
+				7E4C8F4789A876722A9A1179 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1114,6 +1141,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		123B2E486D8659A161FD8CF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bkgyl/Pods-bkgyl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B2121D1F98354391A82CECB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E4C8F4789A876722A9A1179 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bkgyl/Pods-bkgyl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDF676B11DA61ED600153261 /* Sources */ = {
@@ -1326,6 +1401,7 @@
 		};
 		CDF676E31DA61ED600153261 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6671BF4FAC0394D7D2395663 /* Pods-bkgyl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1343,6 +1419,7 @@
 		};
 		CDF676E41DA61ED600153261 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC590980F2CC77EF8D28751 /* Pods-bkgyl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

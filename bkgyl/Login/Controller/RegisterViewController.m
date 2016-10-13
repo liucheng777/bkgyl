@@ -26,7 +26,7 @@
     [super viewDidLoad];
     [self setNavItem];
     [self _createView];
-    self.title = @"注册";
+    self.navigationItem.title = @"注册";
 }
 -(void)_createView
 {
@@ -171,9 +171,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 5) {
-        return kScreenHeight - 64 - 44 * 5;
-    }
+    if (indexPath.row == 5) return kScreenHeight - 64 - 44 * 5;
     return 44;
 }
 

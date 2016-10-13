@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNavItem];
-    self.title = @"科普园地";
+    self.navigationItem.title = @"科普园地";
     _buttonNames = @[@"科学辩证",@"科普论文",@"环境科学",@"遗传基因",@"华夏文化",@"养生保健知识"];
     _buttonImgs = @[@"field_1",@"field_2",@"field_3",@"field_4",@"field_5",@"field_6"];
     [self _createView];
@@ -94,9 +94,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section == 2) {
-        return 2;
-    }
+    if (section == 2) return 2;
     return 1;
 }
 
@@ -254,25 +252,16 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    if (section == 0) {
-        return 0.01;
-    }
+    if (section == 0) return 0.01;
+ 
     return 5;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == 0) {
-        return 148.0 / 320.0 * kScreenWidth;
-    }
-    else if (indexPath.section == 1)
-    {
-        return 186.0 / 320.0 * kScreenWidth;
-    }
-    else if (indexPath.section == 2 && indexPath.row == 0)
-    {
-            return 44;
-    }
+    if (indexPath.section == 0) return 148.0 / 320.0 * kScreenWidth;
+    if (indexPath.section == 1) return 186.0 / 320.0 * kScreenWidth;
+    if (indexPath.section == 2 && indexPath.row == 0) return 44;
     return 50;
 }
 
